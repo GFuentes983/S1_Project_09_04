@@ -16,27 +16,41 @@
 */
 
 form {
-    background-color: #1600D4;
+    width: 90%;
+    background-color: #0833BD;
     margin: 0 auto;
+    border-radius: 5px;
+    padding: 5px;
     height: 25%;
+    display: -webkit-grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
 }
 
 div {
-   display: inline;
-   clear: both;
-   width: 45%;
-   padding: 0 10px; 
-   margin: 0 auto;
+    clear: both;
+    float: left;
+
 }
 
 div#leftCol {
-    float: left;
+    /* grid-row: 1/1; */
+    grid-column: 1/1;
 }
 
 div#rightCol {
-    
+    /* grid-row: 1/1; */
+    grid-column: 2/2;
 }
 
-div#subCan {
-    
+input#reset {
+    float: right;
 }
+
+input#submit {
+    float: left;
+}
+
